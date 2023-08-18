@@ -1,9 +1,3 @@
-/* Globale Styles, die auf allen Seiten geladen werden.
-Wenn man größere Mengen spezifischer Styles hat, kann man
-auch in einzelnen page- bzw. Komponenten-Dateien css oder
-scss-Dateien importieren.
-*/
-
 // Modules
 import type { Metadata } from 'next';
 
