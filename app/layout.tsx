@@ -26,7 +26,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="en">
+		<html lang="de">
 			<body>
 				<div className="site-wrapper">
 					<div className="site-content">{children}</div>
