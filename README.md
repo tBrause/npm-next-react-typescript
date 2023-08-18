@@ -16,13 +16,13 @@
 
 > CMD: git clone & git remote remove orgin & npm install & npm run build & npm run dev
 
-    git clone https://github.com/tBrause/npm-vite-react-sass.git .; git remote remove origin; npm install; npm run build; npm run dev
+    git clone https://github.com/tBrause/npm-next-react-typescript.git .; git remote remove origin; npm install; npm run build; npm run dev
 
 <!-- > **CMD: Schnellstart - install & build & dev**
 
     npm install; npm run build; npm run dev -->
 
-> _Erfolgreich getestet: 21.03.2023_
+> _Erfolgreich getestet: _
 
 ## Bearbeiten
 
@@ -48,9 +48,9 @@
 
     npm run dev
 
-> CMD: npm run preview
+> CMD: npm run start
 
-    npm run preview
+    npm run start
 
 ## Struktur und Dateien
 
