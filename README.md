@@ -2,10 +2,6 @@
 
 ### next, react, sass, eslint, postcss, cssnano, cjs, vsc, git
 
-## Visual Studio Code - Erweiterungen
-
-- Eslint
-
 ## Installation
 
 > CMD: Projektordner erstellen und hinein wechseln
@@ -114,6 +110,11 @@
   - index.html
   - vite.svg
 
-## GIT
+## Erweiterungen für Visual Studio Code
+
+- Prettier
+- ESLint
+- VS Code ES7+ React/Redux/React-Native/JS snippets
+- Pretty TypeScript Errors
 
 <!-- kom -->
