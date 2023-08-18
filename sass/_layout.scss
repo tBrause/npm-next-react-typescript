@@ -1,0 +1,70 @@
+@use 'globals' as *;
+
+body {
+  background-color: var(--background-color);
+}
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.site-header,
+.site-footer {
+  padding: var(--size-fluid-3);
+  background-color: var(--header-footer-background);
+}
+
+.site-header {
+  color: var(--heading-color);
+  display: flex;
+
+  &__title {
+    font-family: var(--font-karla);
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+}
+
+main {
+  padding: var(--size-fluid-2);
+}
+
+.sidebar-layout {
+  max-width: 70rem;
+  margin-inline: auto;
+  display: grid;
+  @media ($sidebar-aside) {
+    grid-template-columns: 1fr 20rem;
+  }
+
+  &__sidebar {
+    padding: var(--size-fluid-2);
+    @media ($sidebar-aside) {
+      margin-top: var(--size-fluid-2);
+      align-self: start;
+      border-inline-start: 2px solid currentColor;
+    }
+    @media ($sidebar-below) {
+      border-block-start: 2px solid currentColor;
+    }
+  }
+}
+
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.default-layout {
+  max-width: 56rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}

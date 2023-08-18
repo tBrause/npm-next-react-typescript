@@ -1,0 +1,12 @@
+@use 'functions' as *;
+
+$small-max: toRem(500);
+$large-min: toRem(1000);
+
+$small: 'width <= #{$small-max}';
+$medium: '#{$small-max} < width < #{$large-min}';
+$large: 'width >= #{$large-min}';
+
+$sidebar-min: toRem(800);
+$sidebar-aside: 'width >= #{$sidebar-min}';
+$sidebar-below: 'width < #{$sidebar-min}';

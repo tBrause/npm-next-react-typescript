@@ -1,0 +1,40 @@
+.big-text {
+  display: block;
+  font-size: 5rem;
+  font-family: 'Rubik Mono One', serif;
+
+  span {
+    display: inline-block;
+    animation-name: 'slide-in';
+    animation-duration: 2s;
+    animation-delay: var(--delay);
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.77, 1.61);
+    position: relative;
+    --startPosition: -12em;
+    &:nth-of-type(odd) {
+      --startPosition: 12em;
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--startPosition)) rotate(1turn);
+  }
+
+  70% {
+    transform: translateY(calc(var(--startPosition) * -0.1)) rotate(0.02turn);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0) rotate(0.02turn);
+  }
+  90% {
+    transform: translateY(0) rotate(0.02turn);
+  }
+  100% {
+    transform: translateY(0) rotate(-0.02turn);
+  }
+}

@@ -1,0 +1,12 @@
+.location-finder {
+  &__error {
+    display: block;
+  }
+  &__show-map,
+  &__show-all {
+    margin-block: 1rem;
+    small {
+      display: block;
+    }
+  }
+}

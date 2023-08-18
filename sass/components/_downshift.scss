@@ -1,0 +1,45 @@
+@use '../globals/' as *;
+.combobox {
+  $p: &;
+  position: relative;
+  width: 100%;
+  max-width: 25rem;
+  margin-block: 1rem;
+
+  > * {
+    width: 100%;
+  }
+
+  .input-delete-wrapper {
+    display: flex;
+  }
+  input {
+    flex: 1;
+  }
+
+  // Increase specificity
+  #{$p}__list {
+    position: absolute;
+    background: white;
+    z-index: 1001;
+    left: 0;
+    right: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &:not(:empty) {
+      border: 1px solid blue;
+      border-radius: toRem(3);
+    }
+  }
+
+  &__item {
+    padding: 0 0.75rem;
+
+    &--highlighted {
+      color: white;
+      background: blue;
+    }
+  }
+}

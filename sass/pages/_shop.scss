@@ -1,0 +1,21 @@
+@use '../globals' as *;
+
+.category-navigation {
+  margin-inline: 0;
+  a {
+    text-decoration: none;
+  }
+}
+
+.product-teaser {
+  box-shadow: var(--shadow-3);
+  padding: var(--size-fluid-2);
+  margin-block: var(--size-fluid-2);
+  &__title {
+    font-size: var(--step-2);
+    a {
+      text-decoration: none;
+    }
+    margin-block: 0;
+  }
+}
