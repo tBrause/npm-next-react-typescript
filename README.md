@@ -1,6 +1,6 @@
 # Next-React-Typescript Entwicklungsumgebung
 
-### next, react, sass, eslint, postcss, cssnano, cjs, vsc, git
+### `next` `react`, sass, eslint, postcss, cssnano, cjs, vsc, git
 
 ## Installation
 
