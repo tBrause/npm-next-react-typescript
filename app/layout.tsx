@@ -5,6 +5,9 @@ import type { Metadata } from 'next';
 import '@/sass/style.scss';
 
 // Components
+import Header from '@/components/Header';
+import MainNav from '@/components/MainNav';
+import Footer from '@/components/Footer';
 
 // Metadata
 export const metadata: Metadata = {
@@ -22,9 +25,10 @@ export default function RootLayout({
 	return (
 		<html lang="de">
 			<body>
-				<div className="site-wrapper">
-					<div className="site-content">{children}</div>
-				</div>
+				<Header />
+				<MainNav />
+				<main>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);

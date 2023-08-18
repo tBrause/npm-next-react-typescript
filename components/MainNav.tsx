@@ -8,15 +8,6 @@ export default function MainNav() {
 				<li>
 					<Link href="/">Home</Link>
 				</li>
-				<li>
-					<Link href="/bilder">Bilder</Link>
-				</li>
-				<li>
-					<Link href="/blog">Blog</Link>
-				</li>
-				<li>
-					<Link href="/team">Team</Link>
-				</li>
 			</ul>
 		</nav>
 	);
