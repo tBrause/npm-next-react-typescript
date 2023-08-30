@@ -21,6 +21,11 @@ export default function Home() {
 						alt="TypeScript"
 					/>
 				</picture>
+				<picture
+					style={{ width: '100vw', display: 'flex', justifyContent: 'center' }}
+				>
+					<img style={{ width: '20vw' }} src="/sass.svg" alt="Sass" />
+				</picture>
 			</div>
 		</>
 	);
